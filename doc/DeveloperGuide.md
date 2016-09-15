@@ -54,6 +54,31 @@ Priority | As a ... | I want to ... | So that I can...
 
 (For all use cases below, the **System** is the `AddressBook` and the **Actor** is the `user`, unless specified otherwise)
 
+#### Use case: Rename a persons tag
+
+**MSS**
+
+1. User requests to rename a specific person's tag
+2. Addressbook shows the persons tag if any.
+3. AddressBook prompts the user to input in the new tag.
+4. User inputs new tag (e.g. 'friends' to buddies)
+5. AddressBook upon completing input will request for confirmation.
+6. Upon user confirmation, the tag in AddressBook will be renamed.
+
+**Extensions**
+
+2a. The person does not exist
+
+> Use case ends
+
+2b. Selected person has no tag
+
+> Use case ends.
+
+5a. User cancels request
+
+> Use case ends.
+ 
 #### Use case: Delete person
 
 **MSS**
